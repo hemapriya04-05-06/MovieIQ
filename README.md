@@ -130,18 +130,7 @@ streamlit run app.py
 
 **Streamlit Application**
 
-Paste your deployed Streamlit URL here.
-
----
-
-## 📷 Screenshots
-
-Include screenshots of:
-
-- Home Page
-- Success Prediction
-- Failure Prediction
-- Analytics Dashboard
+https://movieiq-2eyjwgsrjwj7otdmrv957v.streamlit.app/
 
 ---
 
