@@ -11,7 +11,6 @@ from pathlib import Path
 
 st.set_page_config(
     page_title="MovieIQ",
-    page_icon="🎬",
     layout="wide"
 )
 
@@ -83,7 +82,7 @@ st.markdown("""
 
 <div class="header">
 
-<h1>🎬 MovieIQ</h1>
+<h1>MovieIQ</h1>
 
 <p>
 Movie Success Prediction Dashboard
@@ -100,7 +99,7 @@ Movie Success Prediction Dashboard
 st.markdown(
 """
 <h2 class='section-title'>
-🎯 Movie Success Prediction
+Movie Success Prediction
 </h2>
 """,
 unsafe_allow_html=True
@@ -144,7 +143,7 @@ with left:
     )
 
     predict = st.button(
-        "🎬 Predict Movie Success",
+        "Predict Movie Success",
         use_container_width=True
     )
 
@@ -201,13 +200,13 @@ if predict:
     if prediction==1:
 
         st.success(
-            f"🎉 SUCCESS\n\nConfidence : {confidence:.2f}%"
+            f" SUCCESS\n\nConfidence : {confidence:.2f}%"
         )
 
     else:
 
         st.error(
-            f"❌ FAILURE\n\nConfidence : {confidence:.2f}%"
+            f"FAILURE\n\nConfidence : {confidence:.2f}%"
         )
 
 st.markdown("---")
@@ -215,7 +214,7 @@ st.markdown("---")
 st.markdown(
 """
 <h2 class='section-title'>
-📊 Analytics Dashboard
+Analytics Dashboard
 </h2>
 """,
 unsafe_allow_html=True)
@@ -238,7 +237,7 @@ row4_col1,row4_col2 = st.columns(2)
 
 with row1_col1:
 
-    st.subheader("🎯 Success Distribution")
+    st.subheader("Success Distribution")
 
     success = (
         df["status"]
@@ -277,7 +276,7 @@ with row1_col1:
 
 with row1_col2:
 
-    st.subheader("💰 Budget vs Revenue")
+    st.subheader("Budget vs Revenue")
 
     fig = px.scatter(
         df,
@@ -302,7 +301,7 @@ with row1_col2:
 
 with row2_col1:
 
-    st.subheader("🎬 Genre Distribution")
+    st.subheader("Genre Distribution")
 
     genre = (
         df["genres"]
@@ -346,7 +345,7 @@ with row2_col1:
 
 with row2_col2:
 
-    st.subheader("💵 Average Revenue by Genre")
+    st.subheader("Average Revenue by Genre")
 
     revenue = (
 
@@ -399,7 +398,7 @@ with row2_col2:
 
 with row3_col1:
 
-    st.subheader("⭐ Popularity vs Revenue")
+    st.subheader("Popularity vs Revenue")
 
     fig = px.scatter(
 
@@ -435,7 +434,7 @@ with row3_col1:
 
 with row3_col2:
 
-    st.subheader("⏱ Runtime Distribution")
+    st.subheader("Runtime Distribution")
 
     fig = px.histogram(
 
@@ -466,7 +465,7 @@ with row3_col2:
 
 with row4_col1:
 
-    st.subheader("⭐ Vote Average Distribution")
+    st.subheader("Vote Average Distribution")
 
     fig = px.histogram(
 
@@ -498,7 +497,7 @@ with row4_col1:
 
 with row4_col2:
 
-    st.subheader("🔥 Correlation Heatmap")
+    st.subheader("Correlation Heatmap")
 
     corr = df[
 
